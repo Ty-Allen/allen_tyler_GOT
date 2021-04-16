@@ -10,7 +10,7 @@ A website that gives information and videos, with custom controls, on each Game 
 
 2.Open the HTML file.
 
-3. Click on a Sigil to begin!
+3.Click on a Sigil to begin!
 
 
 ## Authors
