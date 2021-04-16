@@ -46,7 +46,7 @@
 
   function setVideoSource(house) {
     // set the video source, load it and then play it
-    let targetSource = `video/House-${house.charAt(0).toUpperCase() + house.slice(1)}.mp4`;// baratheon => Baratheon, or stark => Stark
+    let targetSource = `videos/House-${house.charAt(0).toUpperCase() + house.slice(1)}.mp4`;// baratheon => Baratheon, or stark => Stark
     // debugger;
     vid.src = targetSource; // helps if you actually set the src!!!
     vid.load();
