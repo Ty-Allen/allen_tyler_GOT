@@ -7,7 +7,12 @@
         lightBox = document.querySelector(".lightbox"),
         vid = lightBox.querySelector('video'),
         houseName = document.querySelector('h1'),
-        houseDescription = document.querySelector('.house-info');
+        houseDescription = document.querySelector('.house-info'),
+        playButton = document.querySelector('#play'),
+        pauseButton = document.querySelector('#pause'),
+        restartButton = document.querySelector('#restart'),
+        volumeSlider = document.querySelector('#volumeSlider');
+        timeSlider = document.querySelector('#videoTime')
 
   // adding house info using arrays -> this is what you would do for FIP as well
   const houseInfo = [
@@ -56,6 +61,7 @@
     // debugger;
     vid.src = targetSource; // helps if you actually set the src!!!
     vid.load();
+    vid.controls = false;
     playVideo();
   }
 
@@ -94,6 +100,26 @@
     }
   }
 
+  function pauseVideo() {
+    vid.pause();
+  }
+
+  function playVideo() {
+    vid.play();
+  }
+
+  function restartVideo() {
+    vid.currentTime = 0;
+  }
+
+  function setVolume() {
+    vid.volume = volumeSlider.value / 100;
+  }
+
   sigils.addEventListener('click', animateBanner);
   sigils.addEventListener('click', popLightBox);
+  pauseButton.addEventListener('click', pauseVideo);
+  playButton.addEventListener('click', playVideo);
+  restartButton.addEventListener('click', restartVideo);
+  volumeSlider.addEventListener("change", setVolume);
 })();

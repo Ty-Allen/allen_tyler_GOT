@@ -143,3 +143,40 @@ video {
 	width: 65%;
 	border: thin solid #949393;
 }
+
+#controls
+{
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#volumeControl
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #6d6d6d;
+  padding: 5px;
+  border: 2px outset #6d6d6d;
+  color: white;
+  width: 120px;
+  margin: 0 auto;
+  font-family: "GOT_font", serif;
+}
+
+#volumeSlider
+{
+  width: 100px;
+  margin: 0 auto;
+}
+
+button
+{
+  width: 20%;
+  height: 2em;
+  color: #fff;
+  background-color: #6D6D6D;
+  font-family: "GOT_font", serif;
+  margin: 0 2% 0 2%;
+}
