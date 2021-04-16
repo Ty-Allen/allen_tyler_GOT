@@ -85,7 +85,12 @@
       lightBox.querySelector('.close').addEventListener('click', () => {
         stopVideo();
         lightBox.classList.remove('show-lightbox');
+      });
+
+      vid.addEventListener("ended", () => {
+        lightBox.classList.remove('show-lightbox');
       })
+
     }
   }
 
