@@ -36,7 +36,7 @@ main {
 	overflow:hidden;
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { position:relative; width:6000px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -80,6 +80,16 @@ main {
 
 .arryn { background-position:-253px -54px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.tyrell { background-position: -406px -55px;}
+.tyrell:hover { background-position: -406px 0px;}
+
+.frey { background-position: -355px -55px;}
+.frey:hover { background-position: -355px 0px;}
+
+.targaryen { background-position: -304px -55px;}
+.targaryen:hover { background-position: -304px 0px;}
+
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -132,4 +142,41 @@ main {
 video {
 	width: 65%;
 	border: thin solid #949393;
+}
+
+#controls
+{
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#volumeControl
+{
+  display: flex;
+  flex-direction: column;
+  background-color: #6d6d6d;
+  padding: 5px;
+  border: 2px outset #6d6d6d;
+  color: white;
+  width: 120px;
+  margin: 0 auto;
+  font-family: "GOT_font", serif;
+}
+
+#volumeSlider
+{
+  width: 100px;
+  margin: 0 auto;
+}
+
+button
+{
+  width: 20%;
+  height: 2em;
+  color: #fff;
+  background-color: #6D6D6D;
+  font-family: "GOT_font", serif;
+  margin: 0 2% 0 2%;
 }

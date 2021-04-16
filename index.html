@@ -17,6 +17,9 @@
     		<img src="images/tully.jpg"/>
     		<img src="images/greyjoy.jpg"/>
     		<img src="images/arryn.jpg"/>
+        <img src="images/tyrell.jpg"/>
+        <img src="images/frey.jpg"/>
+        <img src="images/targaryen.jpg"/>
         </div>
     </section>
 
@@ -31,10 +34,13 @@
             <li><div class="sigilContainer tully" data-offset="3"></div></li>
             <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
             <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer tyrell" data-offset="6"></div></li>
+            <li><div class="sigilContainer frey" data-offset="7"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="8"></div></li>
         </ul>
     </nav>
 
-    <h1>House &nbsp; Stark</h1><!-- replace this with the house name -->
+    <h1>Click On a Sigil</h1><!-- replace this with the house name -->
 
     <p class="house-info"></p><!-- replace this with house details (github gist) -->
 
@@ -42,6 +48,17 @@
     <section class="lightbox">
       <a href="#" class="close">X</a>
       <video src="video/House-Stark.mp4" controls></video>
+
+      <section id="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="restart">Restart</button>
+        <section id="volumeControl">
+          <h3>Volume</h3>
+          <input type="range" min="0" max="100" value="50" id="volumeSlider">
+        </section>
+      </section>
+
     </section>
     <!-- end lightbox -->
 </main>
