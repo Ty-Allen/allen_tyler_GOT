@@ -71,7 +71,9 @@
   function popLightBox(event) {
     // add a class to open the lightBox, use event delegation so we only need one event listener
     if (event.target.className.includes('sigilContainer')) {
-      setTimeout(function() {lightBox.classList.add('show-lightbox')}, 800);
+      setTimeout(function() {
+        lightBox.classList.add('show-lightbox');
+    }, 800);
 
       let targetHouse = event.target.className.split(" ")[1]; //"baratheon", "stark", "tully" etc
       setVideoSource(targetHouse);
